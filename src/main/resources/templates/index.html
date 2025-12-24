@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Passed Days Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+<form action="/Calculate" method="post" class="card1">
+<select name="startDates">
+    <option th:each="i : ${#numbers.sequence(1, 31)}"
+            th:value="${i}"
+            th:text="${i}">
+
+    </option>
+</select>
+<select name="startMonths">
+    <option th:each="i : ${#numbers.sequence(1, 12)}"
+            th:value="${i}"
+            th:text="${i}">
+
+    </option>
+</select>
+<select name="startYears">
+    <option th:each="i : ${#numbers.sequence(1970, 2025)}"
+            th:value="${i}"
+            th:text="${i}">
+
+    </option>
+</select>
+<select name="endDates">
+    <option th:each="i : ${#numbers.sequence(1, 31)}"
+            th:value="${i}"
+            th:text="${i}">
+
+    </option>
+</select>
+<select name="endMonths">
+    <option th:each="i : ${#numbers.sequence(1, 12)}"
+            th:value="${i}"
+            th:text="${i}">
+
+    </option>
+</select>
+<select name="endYears">
+    <option th:each="i : ${#numbers.sequence(1970, 2025)}"
+            th:value="${i}"
+            th:text="${i}">
+
+    </option>
+</select>
+
+    <button type="submit">Calculate Passed Days</button>
+</form>
+<div th:if="${result != null}">
+    <hr> <h3>Result:</h3>
+    <p>
+        Total Days Passed: <b th:text="${result}" class="card2"></b>
+    </p>
+</div>
+</body>
+
+
+</html>

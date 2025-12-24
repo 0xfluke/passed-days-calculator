@@ -1,0 +1,54 @@
+body {
+    background-color: #f0f2f5; /* A light, modern grey */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
+    display: flex;       /* Turn on Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;       /* Make the body take up 100% of the Viewport Height */
+    margin: 0;           /* Remove default browser margins */
+}
+
+.card1 {
+    background-color: white;
+    padding: 2rem;       /* 2 units of padding inside */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* A subtle 3D shadow */
+    width: 300px;        /* Fixed width so it looks neat */
+    display: flex;       /* We use flex inside the card too! */
+    flex-direction: column; /* Stack items top-to-bottom */
+    gap: 15px;           /* Add 15px space between every item automatically */
+}
+
+.card2 {
+    background-color: white;
+    padding: 2rem;       /* 2 units of padding inside */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* A subtle 3D shadow */
+    width: 300px;        /* Fixed width so it looks neat */
+    display: flex;       /* We use flex inside the card too! */
+    flex-direction: column; /* Stack items top-to-bottom */
+    gap: 15px;           /* Add 15px space between every item automatically */
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745; /* Green */
+    color: white;              /* White text */
+    padding: 12px;
+    border: none;              /* Remove ugly border */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;           /* Change mouse to hand icon */
+    font-weight: bold;
+}
+
+/* The "Hover" State: What happens when mouse touches it */
+button:hover {
+    background-color: #218838; /* Slightly darker green */
+}

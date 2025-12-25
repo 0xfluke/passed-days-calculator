@@ -1,15 +1,21 @@
 body {
     background-color: #f0f2f5; /* A light, modern grey */
+    background-image: url('gelincikler.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
     display: flex;       /* Turn on Flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center;     /* Center vertically */
     height: 100vh;       /* Make the body take up 100% of the Viewport Height */
     margin: 0;           /* Remove default browser margins */
+    flex-direction: column; /* The result pop-up will emerge at the bottom of the default body*/
 }
 
 .card1 {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 2rem;       /* 2 units of padding inside */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* A subtle 3D shadow */
@@ -20,8 +26,9 @@ body {
 }
 
 .card2 {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 2rem;       /* 2 units of padding inside */
+    margin: 10px;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* A subtle 3D shadow */
     width: 300px;        /* Fixed width so it looks neat */
@@ -38,7 +45,7 @@ select {
 }
 
 button {
-    background-color: #28a745; /* Green */
+    background-color: #5dbea3; /* WaterGreen */
     color: white;              /* White text */
     padding: 12px;
     border: none;              /* Remove ugly border */
